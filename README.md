@@ -1,12 +1,20 @@
-
-
-
 🛍️ Customer Shopping Behavior Analysis
-<p align="center"> <b>End-to-End Data Analytics Project | Python • SQL • Power BI</b> </p>
 
-<p align="center"> <img src="https://img.shields.io/badge/Python-Data%20Analysis-3776AB?logo=python&logoColor=white"> <img src="https://img.shields.io/badge/Pandas-EDA%20%26%20Cleaning-150458?logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/PostgreSQL-SQL-4169E1?logo=postgresql&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-Supported-4479A1?logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/SQL%20Server-Supported-CC2927?logo=microsoftsqlserver&logoColor=white"> <img src="https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black"> </p>
+<p align="center">
+  <b>End-to-End Data Analytics Project | Python • SQL • Power BI</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-Data%20Analysis-3776AB?logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Pandas-EDA%20%26%20Cleaning-150458?logo=pandas&logoColor=white">
+  <img src="https://img.shields.io/badge/PostgreSQL-SQL-4169E1?logo=postgresql&logoColor=white">
+  <img src="https://img.shields.io/badge/MySQL-Supported-4479A1?logo=mysql&logoColor=white">
+  <img src="https://img.shields.io/badge/SQL%20Server-Supported-CC2927?logo=microsoftsqlserver&logoColor=white">
+  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black">
+</p>
 
 Overview
+
 This project analyzes customer shopping behavior to understand purchasing patterns, customer segments, product preferences, discount usage, subscriptions, and revenue trends.
 
 The project follows a complete data analytics workflow:
@@ -16,6 +24,7 @@ Raw Data → Python EDA & Cleaning → SQL Database → SQL Analysis → Power B
 The goal is to turn raw customer transaction data into clear, business-friendly insights that can support better marketing, customer retention, product, and sales decisions.
 
 Dataset
+
 The dataset contains 3,900 customer records with 18 original columns.
 
 Key fields include:
@@ -53,18 +62,53 @@ Purchase Frequency
 During data preparation, additional analytical features such as Age Group and Purchase Frequency Days are created.
 
 Tools & Technologies
-Tool	Purpose
-Python	Data loading, EDA, cleaning, and transformation
-Pandas	Data manipulation and feature engineering
-Jupyter Notebook	Interactive analysis workflow
-PostgreSQL	Main relational database used for SQL analysis
-MySQL	Alternative database-loading example
-SQL Server	Alternative database-loading example
-SQL	Business-question analysis and segmentation
-Power BI	Interactive dashboard and KPI visualization
-Gamma	Presentation / project storytelling
-GitHub	Project documentation and version control
+
+Tool
+
+Purpose
+
+Python
+
+Data loading, EDA, cleaning, and transformation
+
+Pandas
+
+Data manipulation and feature engineering
+
+Jupyter Notebook
+
+Interactive analysis workflow
+
+PostgreSQL
+
+Main relational database used for SQL analysis
+
+MySQL
+
+Alternative database-loading example
+
+SQL Server
+
+Alternative database-loading example
+
+SQL
+
+Business-question analysis and segmentation
+
+Power BI
+
+Interactive dashboard and KPI visualization
+
+Gamma
+
+Presentation / project storytelling
+
+GitHub
+
+Project documentation and version control
+
 Project Steps
+
 flowchart LR
     A[📄 Raw Dataset] --> B[🐍 Python]
     B --> C[🔎 EDA]
@@ -75,13 +119,17 @@ flowchart LR
     G --> H[📊 Power BI]
     H --> I[📄 Report]
     I --> J[🎤 Gamma PPT]
+
 1. Load the Dataset
+
 The CSV dataset is loaded into Python using Pandas.
 
 import pandas as pd
 
 df = pd.read_csv("customer_shopping_behavior.csv")
+
 2. Exploratory Data Analysis
+
 The dataset is explored to understand:
 
 Shape and structure
@@ -101,6 +149,7 @@ Purchase behavior
 Subscription and discount patterns
 
 3. Data Cleaning
+
 The notebook performs practical cleaning tasks including:
 
 Checking null values
@@ -114,6 +163,7 @@ Renaming purchase amount for easier SQL use
 Removing the redundant promo_code_used column
 
 4. Feature Engineering
+
 Two useful analytical features are created:
 
 Age Group — groups customers into age-based segments
@@ -121,6 +171,7 @@ Age Group — groups customers into age-based segments
 Purchase Frequency Days — converts purchase-frequency labels into numeric day values
 
 5. Load Data into SQL
+
 The cleaned dataset is loaded into a relational database as a customer table.
 
 The notebook includes connection examples for:
@@ -134,6 +185,7 @@ SQL Server
 For security, database passwords should be stored in environment variables rather than directly in the notebook.
 
 6. SQL Analysis
+
 SQL is used to answer business questions such as:
 
 Which gender generates more revenue?
@@ -161,6 +213,7 @@ SQL concepts demonstrated include:
 GROUP BY • SUM() • AVG() • COUNT() • CASE • Subqueries • CTEs • ROW_NUMBER() • Window Functions
 
 Dashboard
+
 The cleaned and analyzed data is visualized in Power BI to provide an executive-friendly view of customer behavior.
 
 The dashboard is designed to highlight areas such as:
@@ -182,14 +235,19 @@ Discount usage
 Shipping preferences
 
 Dashboard Preview
-<p align="center"> <img src="docs/dashboard-overview.png" width="850" alt="Power BI Dashboard Preview"> </p>
+
+<p align="center">
+  <img src="docs/dashboard-overview.png" width="850" alt="Power BI Dashboard Preview">
+</p>
 
 Add your exported Power BI screenshot as docs/dashboard-overview.png to display it here.
 
 The Power BI source file is included in the repository:
 
 Customer_Behavior_DashBoard.pbix
+
 Results
+
 The analysis provides a structured view of customer purchasing behavior and helps identify:
 
 Revenue contribution across customer groups
@@ -213,6 +271,7 @@ These findings can support business decisions in customer retention, promotions,
 Detailed values can be explored directly through the SQL queries and Power BI dashboard.
 
 Report & Presentation
+
 The final project can be presented in two business-friendly formats:
 
 Analytics Report
@@ -246,6 +305,7 @@ Conclusion
 This makes the project suitable for both technical review and stakeholder presentation.
 
 Repository Structure
+
 customer_behavior_analysis/
 │
 ├── Customer_Shopping_Behavior_Analysis.ipynb
@@ -262,26 +322,40 @@ customer_behavior_analysis/
 │
 └── README.md
     └── Project documentation
+
 How to Run
+
 1. Clone the Repository
+
 git clone https://github.com/JaadiMalik/customer_behavior_analysis.git
 cd customer_behavior_analysis
+
 2. Create a Virtual Environment
+
 python -m venv .venv
+
 Activate on Windows:
 
 .venv\Scripts\activate
+
 Activate on macOS/Linux:
 
 source .venv/bin/activate
+
 3. Install Dependencies
+
 pip install pandas jupyter sqlalchemy psycopg2-binary
+
 For optional database connections:
 
 pip install pymysql pyodbc
+
 4. Run the Notebook
+
 jupyter notebook Customer_Shopping_Behavior_Analysis.ipynb
+
 5. Configure the Database
+
 Create a database and update your local database connection settings.
 
 Recommended approach:
@@ -298,19 +372,25 @@ database = os.getenv("DB_NAME")
 engine = create_engine(
     f"postgresql+psycopg2://{username}:{password}@{host}:{port}/{database}"
 )
+
 6. Run the SQL Queries
+
 After the cleaned data is loaded into the customer table, execute:
 
 customer_behavior_sql_queries.sql
+
 7. Open the Power BI Dashboard
+
 Open:
 
 Customer_Behavior_DashBoard.pbix
+
 in Power BI Desktop.
 
 If required, update the database connection under Power BI Data Source Settings.
 
 Skills Demonstrated
+
 Exploratory Data Analysis
 
 Data Cleaning
@@ -336,6 +416,7 @@ Business Reporting
 Presentation Development
 
 Key Project Value
+
 This project demonstrates the ability to work across the full analytics lifecycle rather than only creating charts:
 
 Prepare data → analyze it → query it → visualize it → communicate the results.
@@ -345,6 +426,7 @@ That makes the project relevant for roles such as:
 Data Analyst • Business Analyst • BI Analyst • Reporting Analyst • Junior Analytics Engineer
 
 Author
+
 Jaadi Malik
 
 GitHub: @JaadiMalik
